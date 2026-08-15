@@ -11,11 +11,21 @@ function App() {
   return (
     <>
       <Navbar />
-      
-      <Homepage/>
-      <Aboutpage/>
-      <Teampage/>
-      <Contactpage/>
+      <div id="home">
+        <Homepage/>
+      </div>
+
+      <div id="about">
+        <Aboutpage/>
+      </div>
+
+      <div id="team">
+        <Teampage/>
+      </div>
+
+      <div id="contact">
+        <Contactpage/>
+      </div>
 
       <Footer />
     </>

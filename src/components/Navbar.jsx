@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
   
@@ -38,10 +37,10 @@ export const Navbar = () => {
             Website
           </div>
           <div className="menus hidden md:flex gap-10">
-            <NavLink to={"/"} className={NavLinkStyle}>Homepage</NavLink>
-            <NavLink to={"/about"} className={NavLinkStyle}>About Us</NavLink>
-            <NavLink to={"/our-team"} className={NavLinkStyle}>Our Team</NavLink>
-            <NavLink to={"/kontak"} className={NavLinkStyle}>Contact Us</NavLink>
+            <a href="#home" className={NavLinkStyle}>Hompage</a>
+            <a href="#about" className={NavLinkStyle}>About Us</a>
+            <a href="#team" className={NavLinkStyle}>Our Team</a>
+            <a href="#contact" className={NavLinkStyle}>Our Contact</a>
           </div>
           <div className="burger-button md:hidden">
             <button type="button" onClick={() => setMenuBuka(!menuBuka)}>
@@ -50,10 +49,10 @@ export const Navbar = () => {
           </div>
         </div>
         <div className={`phone-menus md:hidden flex flex-col items-center gap-5 transition-all duration-500 ${ menuBuka ? "opacity-100 max-h-96 pb-3" : "overflow-hidden opacity-0 max-h-0" }`}>
-          <NavLink to={"/"} className={NavLinkStyle}>Hompage</NavLink>
-          <NavLink to={"/about"} className={NavLinkStyle}>About Us</NavLink>
-          <NavLink to={"/our-team"} className={NavLinkStyle}>Our Team</NavLink>
-          <NavLink to={"/kontak"} className={NavLinkStyle}>Our Contact</NavLink>
+          <a href="#home" className={NavLinkStyle}>Hompage</a>
+          <a href="#about" className={NavLinkStyle}>About Us</a>
+          <a href="#team" className={NavLinkStyle}>Our Team</a>
+          <a href="#contact" className={NavLinkStyle}>Our Contact</a>
         </div>
       </div>
     </div>
