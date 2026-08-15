@@ -1,0 +1,2 @@
+export const hoverEffectToWhite = "border-3 transition-all duration-300 border hover:bg-white hover:border-black hover:text-black";
+export const hoverEffectToBlack = "border-3 transition-all duration-300 border hover:bg-black hover:border-white hover:text-white";
